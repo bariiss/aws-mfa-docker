@@ -27,6 +27,15 @@ AWS_REGION=your_aws_region
 AWS_OUTPUT=json
 ```
 
+## Getting Started
+
+To begin using this Docker environment for AWS MFA, clone the repository and navigate to the project directory with the following commands:
+
+```sh
+git clone https://github.com/bariiss/aws-mfa-docker.git
+cd aws-mfa-docker
+```
+
 ## Building and Running
 
 ### Using Pre-Built Docker Image
