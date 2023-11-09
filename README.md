@@ -34,6 +34,7 @@ To begin using this Docker environment for AWS MFA, clone the repository and nav
 ```sh
 git clone https://github.com/bariiss/aws-mfa-docker.git
 cd aws-mfa-docker
+make aws-mfa
 ```
 
 ## Building and Running
