@@ -51,7 +51,7 @@ aws-mfa: create-aws-profile
 	@$(eval MFA_CODE := $(shell make get-verification-code | grep -o '[0-9]\{6\}'))
 	@/usr/bin/expect -c "\
 	set timeout -1; \
-	spawn aws-mfa --force --profile	$(AWS_PROFILE); \
+	spawn aws-mfa --force --profile	$(AWS_PROFILE) --duration $(AWS_MFA_STS_DURATION); \
 	expect \"Enter AWS MFA code for device\"; \
 	send \"$(MFA_CODE)\r\"; \
 	expect eof"
